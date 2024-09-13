@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <title></title>
+    </head>
+<body>
+    <p>Nhap nam can kiem tra</p>
+    <input type="text" name="textname" id="txtname">
+    <input type="button" value="Kiem tra" onclick="kiemTraNamNhuan()"/>
+    <script lang="javascript">
+        function kiemTraNamNhuan(){
+            var nam = document.getElementById("txtname").value;
+            if (nam % 100 == 0){
+                if(nam % 400 == 0){
+                    alert("Nam " + nam +" la nam nhuan.");
+                }else{
+                    alert("Nam " + nam + " khong la nam nhuan.");
+                }
+            }else if(nam % 4 == 0){
+                alert("nam " + nam + " la nam nhuan.");
+            }else{
+                alert("Nam " + nam + " khong la nam nhuan.");
+            }
+        }
+    </script>
+</body>
+</html>

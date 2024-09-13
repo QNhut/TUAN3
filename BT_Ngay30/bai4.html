@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>JavaScript Objects Constructors</h1>
+        <p id="demo00"></p>
+        <p id="demo01"></p>
+        <p id="demo02"></p>
+        <p id="demo03"></p>
+        <script>
+            function Person(first, last, age, eye){
+                this.firstname = first;
+                this.lastname = last;
+                this.age = age;
+                this.eyecolor = eye;
+            }
+
+            const myFather = new Person("John","Doe",50,"Blue");
+
+            document.getElementById(demo02).innerHTML = 
+            "My Father age is" + myFather.age + ".";
+            document.getElementById(demo00).innerHTML = 
+            "My Father firstname is" + myFather.firstName + ".";
+            document.getElementById(demo01).innerHTML = 
+            "My Father lastname is" + myFather.lastName + ".";
+            document.getElementById(demo03).innerHTML = 
+            "My Father eyecolor is" + myFather.eyeColor + ".";
+        </script>
+    </body>
+</html>
